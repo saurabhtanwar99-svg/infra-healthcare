@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Infra-Healthcare</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { line-height: 1.6; color: #333; }
+        
+        /* Hero Section with Gradient */
+        .hero {
+            background: linear-gradient(135deg, #0056b3 0%, #00b4d8 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; opacity: 0.9; }
+
+        .container { max-width: 1100px; margin: 0 auto; padding: 40px 20px; }
+
+        /* Experience Section */
+        .experience-box {
+            background: #fff;
+            border-left: 10px solid #0056b3;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-top: -60px;
+            border-radius: 8px;
+        }
+        h2 { color: #0056b3; margin-bottom: 20px; font-size: 2rem; }
+
+        /* Color Grid for Details */
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .card {
+            padding: 30px;
+            border-radius: 15px;
+            color: white;
+            transition: transform 0.3s;
+        }
+        .card:hover { transform: translateY(-5px); }
+        .blue { background: #023e8a; }
+        .teal { background: #0096c7; }
+        .cyan { background: #48cae4; color: #023e8a; }
+
+        /* Professional Details List */
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            background: #f0f7ff;
+            padding: 40px;
+            margin-top: 40px;
+            border-radius: 20px;
+        }
+        .stat-item { text-align: center; margin: 10px; }
+        .stat-item h3 { color: #0056b3; font-size: 2.5rem; }
+        .stat-item p { font-weight: bold; color: #555; }
+
+        .btn-home {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 12px 25px;
+            background: #0056b3;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <h1>Infra-Healthcare</h1>
+        <p>Revolutionizing Healthcare Infrastructure Since Inception</p>
+    </header>
+
+    <div class="container">
+        <div class="experience-box">
+            <h2>Our Corporate Legacy</h2>
+            <p>At <strong>Infra-Healthcare</strong>, we don't just build spaces; we engineer environments where healing happens. With years of specialized experience in the healthcare sector, we have become a trusted partner for hospitals, clinics, and diagnostic centers across Haryana and beyond.</p>
+            <br>
+            <p>Our expertise lies in bridging the gap between advanced medical technology and physical infrastructure. From state-of-the-art HVAC systems for operating theaters to ergonomic patient ward designs, our work ensures safety, compliance, and efficiency.</p>
+        </div>
+
+        <div class="details-grid">
+            <div class="card blue">
+                <h3>Our Vision</h3>
+                <p>To be the global benchmark in healthcare infrastructure, setting new standards for patient safety and facility operational excellence.</p>
+            </div>
+            <div class="card teal">
+                <h3>Expertise</h3>
+                <p>Our team consists of certified engineers and healthcare consultants who understand the strict regulatory requirements of medical facilities.</p>
+            </div>
+            <div class="card cyan">
+                <h3>Innovation</h3>
+                <p>We utilize smart-building technology and sustainable materials to reduce costs and improve the healing environment for patients.</p>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <h3>150+</h3>
+                <p>Projects Completed</p>
+            </div>
+            <div class="stat-item">
+                <h3>10+</h3>
+                <p>Years Experience</p>
+            </div>
+            <div class="stat-item">
+                <h3>100%</h3>
+                <p>Client Satisfaction</p>
+            </div>
+        </div>
+
+        <div style="text-align: center;">
+            <p style="margin-top: 40px; font-style: italic; color: #777;">Located at Sec 22, DLF Phase 1, Gurugram, we are strategically positioned to serve the medical hub of North India.</p>
+            <a href="index.html" class="btn-home">Back to Home</a>
+        </div>
+    </div>
+
+</body>
+</html>
