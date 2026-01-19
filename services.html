@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Infra-Healthcare</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+        body { line-height: 1.7; color: #2c3e50; background-color: #f4f7f9; }
+        
+        /* Header Section */
+        .service-hero {
+            background: linear-gradient(rgba(0, 86, 179, 0.9), rgba(0, 180, 216, 0.8));
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .service-hero h1 { font-size: 3rem; letter-spacing: 1px; }
+        .service-hero p { max-width: 800px; margin: 20px auto; font-size: 1.1rem; opacity: 0.9; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 60px 20px; }
+
+        /* Vision & Trust Section */
+        .vision-statement {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+            margin-bottom: 60px;
+            border-top: 5px solid #00b4d8;
+        }
+        .vision-statement h2 { color: #0056b3; margin-bottom: 15px; }
+
+        /* Service Cards */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        .service-card {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            border: 1px solid #e1e8ed;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            border-color: #00b4d8;
+        }
+        .service-card h3 { color: #0056b3; margin-bottom: 15px; font-size: 1.5rem; display: flex; align-items: center; }
+        .service-card h3 i { margin-right: 10px; }
+        .service-card p { font-size: 0.95rem; color: #555; }
+        .service-card ul { margin-top: 15px; list-style: none; }
+        .service-card ul li { margin-bottom: 8px; padding-left: 20px; position: relative; font-size: 0.9rem; }
+        .service-card ul li::before { content: "✓"; position: absolute; left: 0; color: #00b4d8; font-weight: bold; }
+
+        /* Deep Knowledge Section */
+        .knowledge-bar {
+            background: #023e8a;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            margin-top: 60px;
+            border-radius: 15px;
+        }
+        .knowledge-bar h2 { margin-bottom: 20px; }
+
+        .footer-nav { text-align: center; margin-top: 50px; }
+        .btn { padding: 12px 30px; background: #0056b3; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.3s; }
+        .btn:hover { background: #00b4d8; }
+    </style>
+</head>
+<body>
+
+    <section class="service-hero">
+        <h1>Specialized Healthcare Services</h1>
+        <p>At Infra-Healthcare, we understand that a hospital is more than a building—it is a life-saving machine. Our services ensure that every bolt, wire, and wall supports patient recovery and clinical precision.</p>
+    </section>
+
+    <div class="container">
+        
+        <div class="vision-statement">
+            <h2>Our Patient-First Vision</h2>
+            <p>Our philosophy is built on the "Healing Environment" principle. We believe that professional infrastructure reduces medical errors, prevents hospital-acquired infections (HAI), and speeds up patient recovery. By integrating international medical standards with localized engineering excellence in Gurugram, we build trust with every project.</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>🏥 Facility Planning & Design</h3>
+                <p>Comprehensive architectural planning tailored for medical workflows. We optimize the "Golden Hour" response time through smart layout design.</p>
+                <ul>
+                    <li>ER & Trauma Center Zoning</li>
+                    <li>Radiology & Imaging Suite Shielding</li>
+                    <li>Patient Flow Optimization</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3>⚙️ Advanced HVAC & Clean Rooms</h3>
+                <p>Managing air quality is critical for infection control. We design specialized ventilation systems for sensitive medical environments.</p>
+                <ul>
+                    <li>Positive Pressure Operating Theaters</li>
+                    <li>HEPA Filtration Systems</li>
+                    <li>ICU Isolation Room Ventilation</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3>🔌 Medical Gas & Power Systems</h3>
+                <p>Reliability is non-negotiable. We provide fail-safe infrastructure for life-support systems.</p>
+                <ul>
+                    <li>Medical Gas Pipeline Systems (MGPS)</li>
+                    <li>Uninterrupted Power Supply (UPS) for OTs</li>
+                    <li>Centralized Nurse Call Systems</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3>🛠️ Annual Maintenance (AMC)</h3>
+                <p>Infrastructure requires constant vigilance. Our AMC services ensure your facility meets healthcare accreditation standards year-round.</p>
+                <ul>
+                    <li>Regulatory Compliance Audits</li>
+                    <li>Equipment Calibration Support</li>
+                    <li>24/7 Emergency Technical Repair</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="knowledge-bar">
+            <h2>Expertise in Global Standards</h2>
+            <p>We strictly adhere to <strong>NABH</strong> (National Accreditation Board for Hospitals) and <strong>JCI</strong> (Joint Commission International) guidelines. Our team brings deep technical knowledge of medical-grade materials, antibacterial coatings, and acoustic management to ensure a quiet, sterile, and safe environment for patients.</p>
+        </div>
+
+        <div class="footer-nav">
+            <a href="index.html" class="btn">Return to Home</a>
+            <a href="contact.html" class="btn" style="background:#00b4d8; margin-left:10px;">Request a Consultation</a>
+        </div>
+    </div>
+
+</body>
+</html>
