@@ -1,0 +1,49 @@
+:root {
+    --primary: #002b5c;   /* Deep Trust Blue */
+    --accent: #00d4ff;    /* Medical Cyan */
+    --white: #ffffff;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.8; color: #333; }
+
+nav {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 20px 8%; background: var(--white); border-bottom: 5px solid var(--primary);
+    position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.logo { font-weight: 800; font-size: 1.6rem; color: var(--primary); letter-spacing: -1px; }
+.nav-links { list-style: none; display: flex; gap: 25px; }
+.nav-links a { text-decoration: none; color: var(--primary); font-weight: 600; font-size: 0.9rem; text-transform: uppercase; }
+
+.hero {
+    min-height: 80vh; 
+    background: linear-gradient(rgba(0,43,92,0.85), rgba(0,43,92,0.85)), 
+                url('https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=2070&auto=format&fit=crop');
+    background-size: cover; background-position: center;
+    display: flex; align-items: center; justify-content: center; text-align: center; color: white; padding: 20px;
+}
+.hero h1 { font-size: 3.5rem; font-weight: 800; margin-bottom: 20px; line-height: 1.2; }
+.hero p { font-size: 1.3rem; max-width: 850px; margin: 0 auto 35px; opacity: 0.9; }
+
+.section-container { padding: 80px 10%; }
+.section-title { font-size: 2.2rem; color: var(--primary); margin-bottom: 25px; border-left: 8px solid var(--accent); padding-left: 15px; }
+
+.content-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 40px; }
+.card { background: #f0f7ff; padding: 30px; border-radius: 12px; border-top: 6px solid var(--primary); transition: 0.3s; }
+.card:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+
+.btn-primary { background: var(--accent); color: var(--primary); padding: 15px 35px; border-radius: 8px; text-decoration: none; font-weight: bold; }
+
+.whatsapp-float {
+    position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white;
+    padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 10px;
+    text-decoration: none; font-weight: bold; box-shadow: 0 8px 15px rgba(0,0,0,0.2); z-index: 2000;
+}
+
+footer { background: var(--primary); color: white; padding: 50px 10%; text-align: center; }
+
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.2rem; }
+    .nav-links { display: none; }
+}
