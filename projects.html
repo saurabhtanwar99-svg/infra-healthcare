@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Portfolio | Infra-Healthcare</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: #f8f9fa; color: #333; line-height: 1.6; }
+        
+        /* Header */
+        .project-header {
+            background: #003049;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .project-header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        .project-header p { font-size: 1.1rem; opacity: 0.8; max-width: 700px; margin: 0 auto; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 50px 20px; }
+
+        /* Project Category Tabs (Visual only) */
+        .filter-info {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #0056b3;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Project Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+        .project-card:hover { transform: translateY(-10px); }
+
+        .project-img {
+            height: 200px;
+            background: #e9ecef;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #adb5bd;
+            font-size: 1.2rem;
+            border-bottom: 4px solid #00b4d8;
+            /* In a real site, replace this div with <img src="..."> */
+        }
+
+        .project-content { padding: 25px; }
+        .project-tag {
+            background: #caf0f8;
+            color: #0077b6;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .project-content h3 { color: #003049; margin-bottom: 10px; }
+        .project-content p { font-size: 0.95rem; color: #666; margin-bottom: 15px; }
+
+        .technical-specs {
+            background: #f1f8ff;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 0.85rem;
+        }
+        .technical-specs strong { color: #0056b3; }
+
+        /* Experience Summary */
+        .summary-banner {
+            background: linear-gradient(135deg, #0056b3, #0077b6);
+            color: white;
+            padding: 50px;
+            border-radius: 15px;
+            margin-top: 60px;
+            text-align: center;
+        }
+        
+        .nav-links { text-align: center; margin-top: 40px; }
+        .btn {
+            text-decoration: none;
+            padding: 12px 25px;
+            background: #003049;
+            color: white;
+            border-radius: 5px;
+            margin: 0 10px;
+            transition: 0.3s;
+        }
+        .btn:hover { background: #00b4d8; }
+    </style>
+</head>
+<body>
+
+    <header class="project-header">
+        <h1>Infrastructure Excellence</h1>
+        <p>A showcase of high-performance healthcare facilities engineered by Infra-Healthcare across the Haryana region.</p>
+    </header>
+
+    <div class="container">
+        <p class="filter-info">Our Recent Milestones</p>
+        
+        <div class="grid">
+            <div class="project-card">
+                <div class="project-img">Multi-Specialty OT Wing</div>
+                <div class="project-content">
+                    <span class="project-tag">Modular OT</span>
+                    <h3>Advanced Surgical Suite</h3>
+                    <p>Complete turnkey installation of three modular operating theaters with laminar airflow systems and anti-bacterial wall cladding.</p>
+                    <div class="technical-specs">
+                        <strong>Tech:</strong> HEPA H14 Filtration, Hermetic Doors, Pendent Systems.
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">Critical Care Unit (ICU)</div>
+                <div class="project-content">
+                    <span class="project-tag">Life Support Infra</span>
+                    <h3>20-Bed Tertiary ICU</h3>
+                    <p>Designed and executed the electrical and medical gas infrastructure for a high-dependency unit, ensuring 100% redundancy.</p>
+                    <div class="technical-specs">
+                        <strong>Tech:</strong> Medical Gas Alarm Systems, Isolated Power Supply (IPS).
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">Diagnostic Imaging Hub</div>
+                <div class="project-content">
+                    <span class="project-tag">Radiology Shielding</span>
+                    <h3>MRI & CT Scan Facility</h3>
+                    <p>Specialized lead-lining and RF shielding for a diagnostic center in Gurugram to ensure zero radiation leakage and clear imaging.</p>
+                    <div class="technical-specs">
+                        <strong>Tech:</strong> Faraday Cage Construction, Lead Glass Installation.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="summary-banner">
+            <h2>Reliability is Our Foundation</h2>
+            <p>From private clinics in DLF Phase 1 to large-scale government hospital wings, we deliver projects that meet NABH guidelines and International Safety Standards. Every project listed here was delivered on time and within budget.</p>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html" class="btn">Home</a>
+            <a href="services.html" class="btn">Our Services</a>
+            <a href="contact.html" class="btn">Start a Project</a>
+        </div>
+    </div>
+
+</body>
+</html>
