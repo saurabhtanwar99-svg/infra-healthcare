@@ -1,0 +1,61 @@
+/* Global Settings */
+:root {
+    --primary: #004a99;    /* Trust Blue */
+    --secondary: #00a8cc;  /* Innovation Teal */
+    --text: #1e293b;
+    --light: #f8fafc;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    color: var(--text);
+    background-color: var(--white);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Fabulous Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: var(--white);
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo { 
+    font-weight: 800; 
+    font-size: 1.4rem; 
+    color: var(--primary); 
+    text-decoration: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text);
+    margin-left: 25px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.nav-links a:hover { color: var(--secondary); }
+
+/* Buttons */
+.btn-primary {
+    background: var(--primary);
+    color: var(--white);
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn-primary:hover { background: var(--secondary); transform: translateY(-2px); }
